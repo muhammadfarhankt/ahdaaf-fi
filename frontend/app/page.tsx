@@ -6,6 +6,17 @@ import { Discovery } from "@/components/dashboard/Discovery";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F3F5F7] pb-20 relative overflow-hidden">
+      {/* Palm Background Texture */}
+      <div
+        className="fixed inset-0 pointer-events-none z-0 opacity-40 mix-blend-multiply"
+        style={{
+          backgroundImage: `url('/palm-bg.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
       {/* Background Elements for "Slick" feel */}
       <div className="absolute top-0 left-0 w-full h-96 bg-linear-to-b from-green-50/50 to-transparent pointer-events-none" />
       <div className="absolute -top-40 -right-40 w-[800px] h-[800px] bg-green-100/30 rounded-full blur-3xl pointer-events-none" />
@@ -13,7 +24,7 @@ export default function Home() {
 
       <TopNav />
 
-      <div className="max-w-7xl mx-auto px-8 py-8 relative z-0">
+      <div className="max-w-7xl mx-auto px-8 py-8 relative z-10">
         <Header />
         <GoalVaults />
         <Discovery />
