@@ -96,12 +96,12 @@ Add funds to your vaults seamlessly:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        Frontend                              │
+│                        Frontend                             │
 │  ┌─────────────┐  ┌──────────────┐  ┌───────────────────┐   │
 │  │  Goal       │  │  Discovery   │  │  Invest/TopUp     │   │
 │  │  Vaults     │  │  (AI Yield)  │  │  Modals           │   │
 │  └─────────────┘  └──────────────┘  └───────────────────┘   │
-│                           │                                  │
+│                           │                                 │
 │              ┌────────────┴────────────┐                    │
 │              │    Thirdweb SDK         │                    │
 │              │    (Wallet Connection)  │                    │
@@ -109,7 +109,7 @@ Add funds to your vaults seamlessly:
 └───────────────────────────┼─────────────────────────────────┘
                             │
 ┌───────────────────────────┼─────────────────────────────────┐
-│                     BNB Chain                                │
+│                     BNB Chain                               │
 │  ┌─────────────┐  ┌──────────────┐  ┌───────────────────┐   │
 │  │ PancakeSwap │  │   ListaDAO   │  │  Venus Protocol   │   │
 │  │   (DEX)     │  │  (Staking)   │  │    (Lending)      │   │
