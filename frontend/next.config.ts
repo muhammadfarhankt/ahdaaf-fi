@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  turbopack: {
+    root: __dirname,
+  },
+
   webpack: (config) => {
     // ignore thread-stream's test files so Vercel doesn't try to bundle them
     config.module.noParse = [/thread-stream[\\/]test/];
