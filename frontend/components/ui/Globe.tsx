@@ -17,13 +17,13 @@ export const Globe = ({ className }: { className?: string }) => {
       height: 800 * 2,
       phi: 0,
       theta: 0,
-      dark: 1,
+      dark: 0,
       diffuse: 1.2,
       mapSamples: 16000,
       mapBrightness: 6,
-      baseColor: [0.05, 0.05, 0.05], // Dark base
-      markerColor: [0.1, 0.8, 1],
-      glowColor: [0.1, 0.8, 1], // Teal glow
+      baseColor: [1, 1, 1], // White base
+      markerColor: [0.1, 0.8, 0.8],
+      glowColor: [0.8, 0.9, 0.9], // Light glow
       markers: [],
       onRender: (state) => {
         state.phi = phi;

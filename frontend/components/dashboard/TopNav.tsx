@@ -15,13 +15,16 @@ export const TopNav = () => {
 
   return (
     <nav className="flex items-center justify-between px-8 py-6 bg-[#F0F2F5]/50 backdrop-blur-sm sticky top-0 z-50">
-      <div className="relative w-96">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-        <input
-          type="text"
-          placeholder="Search vaults, tokens, or goals..."
-          className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border-none focus:ring-2 focus:ring-green-500/20 outline-none text-sm shadow-sm text-gray-600 placeholder:text-gray-400 transition-all"
-        />
+      <div className="flex items-center gap-8">
+        <span className="text-2xl font-bold tracking-tight text-gray-900">Ahdaaf-Fi</span>
+        <div className="relative w-96">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+          <input
+            type="text"
+            placeholder="Search vaults, tokens, or goals..."
+            className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border-none focus:ring-2 focus:ring-green-500/20 outline-none text-sm shadow-sm text-gray-600 placeholder:text-gray-400 transition-all"
+          />
+        </div>
       </div>
 
       <div className="flex items-center gap-4">
