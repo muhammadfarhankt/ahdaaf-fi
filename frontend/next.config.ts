@@ -16,9 +16,21 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
 
-  webpack: (config) => {
-    // ignore thread-stream's test files so Vercel doesn't try to bundle them
-    config.module.noParse = [/thread-stream[\\/]test/];
+  webpack: (config, { webpack }) => {
+    // Ignore 'tap' module requests from thread-stream test files
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^tap$/,
+      })
+    );
+
+    // Also ignore thread-stream test directory entirely
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /thread-stream[\\/]test/,
+      })
+    );
+
     return config;
   },
 };
